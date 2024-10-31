@@ -21,16 +21,15 @@ const Form = ({ className }: { className?: string }) => {
     control,
     reset,
     formState: { errors, isValid },
-  } = useForm<FormValues>();
+  } = useForm<FormValues>({ defaultValues: { city: undefined } });
 
   const onSubmit: SubmitHandler<FormValues> = async (formValues) => {
     try {
       const res = await fetch(
         process.env.NEXT_PUBLIC_API ||
-          "https://script.google.com/macros/s/AKfycbzJqDG7YGlu0Yw0DlMDrm76A77dhkJNgn2A5f9jpB4soUEKTMxnuLvNP1wk5iQWIPw/exec",
+          "https://script.google.com/macros/s/AKfycbx74NbFu4qSInWClTDNUJHHUDJ-TSJcGpf9NDjXnTDrXzFQWLH1IUywYEhf-jVUsW-F/exec",
         {
           redirect: "follow",
-          mode: 'no-cors',
           method: "POST",
           headers: {
             "Content-Type": "text/plain;charset=utf-8",
@@ -38,6 +37,7 @@ const Form = ({ className }: { className?: string }) => {
           body: JSON.stringify(formValues),
         }
       );
+
       const data: any = await res.json();
 
       if (data.status !== "success") {
@@ -105,7 +105,9 @@ const Form = ({ className }: { className?: string }) => {
         <Controller
           name="city"
           control={control}
-          render={({ field }) => <SelectDemo onValueChange={field.onChange} />}
+          render={({ field }) => (
+            <SelectDemo value={field.value} onValueChange={field.onChange} />
+          )}
         />
         {errors.city && (
           <p className="text-red-500">Không được bỏ trống trường này</p>
