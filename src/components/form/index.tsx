@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { SubmitHandler, useForm, Controller } from "react-hook-form";
 import SelectDemo from "../select";
 import { cn } from "@/utils";
@@ -15,16 +15,20 @@ type FormValues = {
 };
 
 const Form = ({ className }: { className?: string }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const {
     register,
     handleSubmit,
     control,
     reset,
+    resetField,
     formState: { errors, isValid },
-  } = useForm<FormValues>({ defaultValues: { city: undefined } });
+  } = useForm<FormValues>({ defaultValues: { city: "" } });
 
   const onSubmit: SubmitHandler<FormValues> = async (formValues) => {
     try {
+      setIsLoading(true);
       const res = await fetch(
         process.env.NEXT_PUBLIC_API ||
           "https://script.google.com/macros/s/AKfycbx74NbFu4qSInWClTDNUJHHUDJ-TSJcGpf9NDjXnTDrXzFQWLH1IUywYEhf-jVUsW-F/exec",
@@ -46,10 +50,13 @@ const Form = ({ className }: { className?: string }) => {
 
       if (data.status === "success") {
         reset();
+        resetField("city");
         alert("Đăng ký thành công!");
       }
     } catch (error) {
       console.log(error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -105,8 +112,13 @@ const Form = ({ className }: { className?: string }) => {
         <Controller
           name="city"
           control={control}
+          rules={{ required: true }}
           render={({ field }) => (
-            <SelectDemo value={field.value} onValueChange={field.onChange} />
+            <SelectDemo
+              value={field.value}
+              defaultValue={field.value}
+              onValueChange={field.onChange}
+            />
           )}
         />
         {errors.city && (
@@ -125,7 +137,7 @@ const Form = ({ className }: { className?: string }) => {
         <button
           type="submit"
           className="bg-[#cca332] h-12 hover:opacity-70 transition-all text-white font-bold disabled:opacity-50"
-          disabled={!isValid}
+          disabled={!isValid || isLoading}
         >
           Đăng ký
         </button>
