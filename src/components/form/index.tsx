@@ -27,9 +27,10 @@ const Form = ({ className }: { className?: string }) => {
     try {
       const res = await fetch(
         process.env.NEXT_PUBLIC_API ||
-          "https://script.google.com/macros/s/AKfycbxHLX7NKZz1mTBc7NbYgKHmSh0RFxjAxuQezGPd5ScgYFSoRFGcsBMFr_b9-xdoxcSTBg/exec",
+          "https://script.google.com/macros/s/AKfycbzJqDG7YGlu0Yw0DlMDrm76A77dhkJNgn2A5f9jpB4soUEKTMxnuLvNP1wk5iQWIPw/exec",
         {
           redirect: "follow",
+          mode: 'no-cors',
           method: "POST",
           headers: {
             "Content-Type": "text/plain;charset=utf-8",
