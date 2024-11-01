@@ -136,7 +136,7 @@ const Form = ({ className }: { className?: string }) => {
 
         <button
           type="submit"
-          className="bg-[#cca332] h-12 hover:opacity-70 transition-all text-white font-bold disabled:opacity-50"
+          className="bg-primary h-12 hover:opacity-70 transition-all text-white font-bold disabled:opacity-50"
           disabled={!isValid || isLoading}
         >
           Đăng ký

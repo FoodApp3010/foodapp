@@ -8,7 +8,7 @@
   }
 
   input {
-    @apply py-3 px-4 placeholder:text-black outline-slate-500;
+    @apply py-3 px-4 placeholder:text-black outline-slate-500 rounded;
   }
 }
 

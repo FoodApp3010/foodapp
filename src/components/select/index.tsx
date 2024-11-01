@@ -27,9 +27,9 @@ const SelectDemo: FC<Select.SelectProps> = (props) => (
 const SelectItem = React.forwardRef<
   React.ElementRef<typeof Select.Item>,
   React.ComponentPropsWithoutRef<typeof Select.Item>
->(({ children, className, ...props }) => {
+>(({ children, className, ...props }, ref) => {
   return (
-    <Select.Item className={cn(styles.Item, className)} {...props}>
+    <Select.Item className={cn(styles.Item, className)} {...props} ref={ref}>
       <Select.ItemText>{children}</Select.ItemText>
     </Select.Item>
   );

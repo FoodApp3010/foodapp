@@ -14,7 +14,7 @@ const SectionItem: FC<SectionItemProps> = ({ title, desc, img }) => {
         <Image alt="" src={img} width={32} height={32} />
       </div>
       <div>
-        <span className="text-[42px] leading-[44px] font-bold text-[#004AAD]">
+        <span className="text-[42px] leading-[44px] font-bold text-primary">
           {desc}+
         </span>
         <h4 className="text-sm">{title}</h4>
