@@ -23,9 +23,6 @@ const Section3 = () => {
             của GRABFOOD
           </li>
           <li className="bg-primary p-5 rounded-2xl font-bold text-white text-lg lg:text-xl text-center">
-            Không mất chi phí đăng ký
-          </li>
-          <li className="bg-primary p-5 rounded-2xl font-bold text-white text-lg lg:text-xl text-center">
             Hỗ trợ tư vấn miễn phí lộ trình tăng doanh thu (không thu phí dịch
             vụ ngoài)
           </li>

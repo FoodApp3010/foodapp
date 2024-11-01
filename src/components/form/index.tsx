@@ -11,7 +11,6 @@ type FormValues = {
   restaurantName: string;
   address: string;
   city: string;
-  appName: string;
 };
 
 const Form = ({ className }: { className?: string }) => {
@@ -124,16 +123,6 @@ const Form = ({ className }: { className?: string }) => {
         {errors.city && (
           <p className="text-red-500">Không được bỏ trống trường này</p>
         )}
-
-        <input
-          type="text"
-          placeholder="Ứng dụng cần hỗ trợ đăng ký"
-          {...register("appName", { required: true })}
-        />
-        {errors.appName && (
-          <p className="text-red-500">Không được bỏ trống trường này</p>
-        )}
-
         <button
           type="submit"
           className="bg-primary h-12 hover:opacity-70 transition-all text-white font-bold disabled:opacity-50"
