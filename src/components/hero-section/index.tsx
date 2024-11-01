@@ -10,7 +10,7 @@ const HeroSection = () => {
     <>
       <div className="w-full bg-gradient-to-r from-[#15B392] via-[#54C392] to-[#54C392] bg-center px-5 py-10 lg:p-20 relative">
         <h1 className="text-white text-center text-[26px] lg:text-[56px] font-bold">
-          HỖ TRỢ MARKETING TRÊN CÁC GIAN HÀNG
+          Hỗ Trợ Đăng Kí Gian Hàng GRABFOOD
         </h1>
         <div className="max-lg:flex-col lg:flex justify-center gap-10 py-10">
           <div className="flex flex-col items-center">

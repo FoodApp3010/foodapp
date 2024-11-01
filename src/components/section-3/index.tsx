@@ -26,7 +26,8 @@ const Section3 = () => {
             Không mất chi phí đăng ký
           </li>
           <li className="bg-primary p-5 rounded-2xl font-bold text-white text-lg lg:text-xl text-center">
-            Miễn phí chi phí hỗ trợ khi lên app
+            Hỗ trợ tư vấn miễn phí lộ trình tăng doanh thu (không thu phí dịch
+            vụ ngoài)
           </li>
           <li className="bg-primary p-5 rounded-2xl font-bold text-white text-lg lg:text-xl text-center">
             Thời gian lên App nhanh chóng từ 1- 2 ngày
