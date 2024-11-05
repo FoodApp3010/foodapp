@@ -8,7 +8,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
-      <div className="w-full bg-gradient-to-r from-[#15B392] via-[#54C392] to-[#54C392] bg-center px-5 py-10 lg:p-20 relative">
+      <div className="w-full bg-primary bg-center px-5 py-10 lg:p-20 relative">
         <h1 className="text-white text-center text-[26px] lg:text-[56px] font-bold">
           Hỗ Trợ Đăng Kí Gian Hàng GRABFOOD
         </h1>
@@ -22,10 +22,10 @@ const HeroSection = () => {
               Chú ý: Không đăng ký chạy xế, chạy xe
             </p>
             <Link
-              href="#contact"
-              className="bg-primary py-5 px-7 mt-10 inline-block text-2xl lg:text-4xl text-white font-bold uppercase rounded-xl shadow text-center"
+              href="tel:0981169675"
+              className="bg-gradient-to-r from-[#15B392] via-[#54C392] to-[#54C392] py-5 px-7 mt-10 inline-block text-2xl lg:text-4xl text-white font-bold uppercase rounded-xl shadow text-center"
             >
-              Tư vấn ngay
+              0981169675
             </Link>
           </div>
           <div className="hidden lg:block">
