@@ -22,10 +22,10 @@ const HeroSection = () => {
               Chú ý: Không đăng ký chạy xế, chạy xe
             </p>
             <Link
-              href="tel:0981169675"
+              href="https://zalo.me/0981169675"
               className="bg-gradient-to-r from-[#15B392] via-[#54C392] to-[#54C392] py-5 px-7 mt-10 inline-block text-2xl lg:text-4xl text-white font-bold uppercase rounded-xl shadow text-center"
             >
-              0981169675
+              Đăng ký ngay
             </Link>
           </div>
           <div className="hidden lg:block">
