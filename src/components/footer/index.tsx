@@ -3,7 +3,7 @@ import Container from "../container";
 import Form from "../form";
 import Link from "next/link";
 import Image from "next/image";
-import img from "@/images/SG-3-New-courier-landing-page-Grab-e1681456801285.png";
+import img from "@/images/Food-Delivery-Service-PNG-High-Quality-Image.png";
 
 const Footer = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../container";
 import SectionItem from "./section-item";
-import img from "@/images/Grab-Food-3.png";
+import img from "@/images/food-delivery-service-design-vector.jpg";
 import Image from "next/image";
 
 const Section2 = () => {
@@ -36,6 +36,7 @@ const Section2 = () => {
         src={img}
         alt="GIAN HÀNG, QUÁN ĂN ONLINE XU THẾ CỦA TƯƠNG LAI"
         className="object-cover"
+        width={500}
       />
     </Container>
   );

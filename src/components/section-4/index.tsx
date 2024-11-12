@@ -2,10 +2,10 @@ import React from "react";
 import Container from "../container";
 import Image from "next/image";
 
-import core1 from "@/images/dang-ky-ban-hang-tren-grabfood-1.jpg";
-import core2 from "@/images/Screen-Shot-2018-11-29-at-1.31.28-PM.png";
-import core3 from "@/images/grabfood3.jpg";
-import core4 from "@/images/grabfood-delivery.jpeg";
+import core1 from "@/images/people-taking-photos-food_23-2149303524.jpg";
+import core2 from "@/images/ma-mien-phi-van-chuyen-shopee-food.jpg";
+import core3 from "@/images/grabfood-delivery.jpeg";
+import core4 from "@/images/restaurant-delivery-orders-1024x683.jpg";
 
 const Section4 = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import bg from "@/images/pngaaa.com-7873734.png";
+import bg from "@/images/food-delivery-development-company-factor-that-affect.webp";
 import Form from "../form";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,11 +10,11 @@ const HeroSection = () => {
     <>
       <div className="w-full bg-primary bg-center px-5 py-10 lg:p-20 relative">
         <h1 className="text-white text-center text-[26px] lg:text-[56px] font-bold">
-          Hỗ Trợ Đăng Kí Gian Hàng GRABFOOD
+          Hỗ Trợ Đăng Kí Gian Hàng FOOD APP
         </h1>
         <div className="max-lg:flex-col lg:flex justify-center gap-10 py-10">
           <div className="flex flex-col items-center">
-            <Image src={bg} alt="" className="max-lg:size-56" />
+            <Image src={bg} alt="" className="max-lg:size-56 max-w-[400px]" />
             <p className="text-2xl lg:text-5xl font-bold uppercase xl:px-10 text-white text-center mt-8 lg:mt-10">
               Nhà hàng - quán ăn
             </p>

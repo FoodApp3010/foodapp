@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../container";
-import img from "@/images/chup-anh-quang-cao-grabfood-1.jpg";
+import img from "@/images/4948872.webp";
 import Image from "next/image";
 
 const Section3 = () => {
@@ -10,7 +10,7 @@ const Section3 = () => {
       className="flex-col lg:max-w-[1024px]"
     >
       <h2 className="font-bold text-primary text-2xl lg:text-[34px] text-center leading-10">
-        Hãy liên hệ với bộ phận hỗ trợ đăng ký Grabfood
+        Hãy liên hệ với bộ phận hỗ trợ đăng ký Food App ngay!
       </h2>
       <div className="flex flex-col lg:flex-row gap-10">
         <Image src={img} alt="" className="object-cover lg:max-w-[500px]" />
@@ -20,7 +20,7 @@ const Section3 = () => {
           </li>
           <li className="bg-primary p-5 rounded-2xl font-bold text-white text-lg lg:text-xl text-center">
             Tư vấn hỗ trợ 24/7 trên toàn quốc, Gặp nhân viên tư vấn chính thống
-            của GRABFOOD
+            của FOOD APP
           </li>
           <li className="bg-primary p-5 rounded-2xl font-bold text-white text-lg lg:text-xl text-center">
             Hỗ trợ tư vấn miễn phí lộ trình tăng doanh thu (không thu phí dịch
