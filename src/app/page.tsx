@@ -1,4 +1,5 @@
 import Comments from "@/components/comments";
+import Dialog from "@/components/dialog";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import Section1 from "@/components/section-1";
@@ -9,7 +10,8 @@ import Section5 from "@/components/section-5";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between relative">
+      <Dialog />
       <HeroSection />
       <Section3 />
       <Section1 />

@@ -3,7 +3,7 @@ import Container from "../container";
 import Form from "../form";
 import Link from "next/link";
 import Image from "next/image";
-import img from "@/images/Food-Delivery-Service-PNG-High-Quality-Image.png";
+import img from "@/images/food-delivery-service-illustration-download-in-svg-png-gif-file-formats--guy-boy-person-scooter-pack-e-commerce-shopping-illustrations-4561489.webp";
 
 const Footer = () => {
   return (
@@ -22,11 +22,11 @@ const Footer = () => {
           <Link className="block mt-1" href="tel:0938437600">
             <strong>Số điện thoại:</strong> 0938437600
           </Link>
-          <p>
+          <Link href="https://zalo.me/0981169675">
             <strong>Zalo:</strong> 0981169675
-          </p>
-          <Link className="block mt-1" href="mailto:hoa.buithi@grabtaxi.com">
-            <strong>Email:</strong> hoa.buithi@grabtaxi.com
+          </Link>
+          <Link className="block mt-1" href="mailto:htfoodapp123@gmail.com">
+            <strong>Email:</strong> htfoodapp123@gmail.com
           </Link>
           <Link className="block mt-1" href="#">
             <strong>Website:</strong> https://foodapp.vercel.app
