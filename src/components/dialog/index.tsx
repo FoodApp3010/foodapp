@@ -10,7 +10,7 @@ const Dialog = () => {
   return isOpen ? (
     <div className="fixed top-0 left-0 w-full h-full z-50">
       <div className="w-full h-full bg-black/50 absolute" />
-      <div className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute shadow-[rgb(255,225,116)_0px_0px_102px_0px]">
+      <div className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute shadow-[rgb(255,225,116)_0px_0px_102px_0px] scale-75">
         <Image src={img} alt="" />
         <button
           onClick={() => setIsOpen(false)}

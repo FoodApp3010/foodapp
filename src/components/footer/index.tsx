@@ -13,7 +13,7 @@ const Footer = () => {
     >
       <div
         id="contact"
-        className="flex max-lg:flex-col max-lg:gap-10 justify-between w-full"
+        className="flex max-lg:flex-col max-lg:gap-10 lg:gap-24 justify-center w-full"
       >
         <div className="flex flex-col max-lg:items-center lg:max-w-[400px] text-white text-center">
           <h2 className="font-bold text-xl">
@@ -32,8 +32,22 @@ const Footer = () => {
             <strong>Website:</strong> https://foodapp.vercel.app
           </Link>
           <Image src={img} alt="" className="lg:size-96 size-60 mt-10" />
+          <Link
+            href="tel:0938437600"
+            className="flex w-full items-center justify-center bg-primary h-12 hover:opacity-70 transition-all text-white font-bold disabled:opacity-50 mt-auto"
+          >
+            Hotline
+          </Link>
         </div>
-        <Form className="bg-white/70 rounded-xl" />
+        <div className="">
+          <Form className="bg-white/70 rounded-xl" />
+          <Link
+            href="https://zalo.me/0981169675"
+            className="flex items-center justify-center bg-primary h-12 hover:opacity-70 transition-all text-white font-bold disabled:opacity-50 w-full mt-10"
+          >
+            Zalo
+          </Link>
+        </div>
       </div>
       <p className="text-white lg:mt-10">
         Chúng tôi không phải là đơn vị đơn vị khởi tạo ra foodapp, chúng tôi
