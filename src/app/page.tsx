@@ -1,4 +1,6 @@
 import Comments from "@/components/comments";
+import Phone from "@/components/contact-button/phone";
+import Zalo from "@/components/contact-button/zalo";
 import Dialog from "@/components/dialog";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
@@ -20,6 +22,10 @@ export default function Home() {
       <Section5 />
       <Comments />
       <Footer />
+      <div className="fixed bottom-2 w-[90px] h-[180px] left-2 z-50">
+        <Zalo />
+        <Phone />
+      </div>
     </main>
   );
 }
